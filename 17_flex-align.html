@@ -44,7 +44,7 @@
             border-radius:10px;/*curved corner edges on the border*/
             /* width:200px;Sets how big you want them */
             /*flex-shrink:0;/*none of them will shrink if i put it on the parent*/
-            /*flex-grow:1;/*I put this oif i want to grow all of them*/
+            /*flex-grow:1;/*I put this if i want to grow all of them*/
             /*flex:1;/*flex-1 is the general term for using all 3 flex properties
             including grow,shrink,and basis(it can take in 3 values of numbers
             */
@@ -53,6 +53,11 @@
 
         .item-1{
             align-self:flex-start; /*item-1 box movement*/
+        /*align-self is for mving each box individually then adding flex-end or flex-start*/
+        }
+
+        .item-3{
+            align-self:flex-end;
         }
 
     </style>

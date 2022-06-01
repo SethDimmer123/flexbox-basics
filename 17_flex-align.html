@@ -15,24 +15,44 @@
         }
 
         .flex-container{
+            background-color:#f4f4f4;
             display:flex;/*If i want to align the (Item) boxes side-by-side*/
             flex-direction:row; /*this is the default for display:flex; property*/
-            
+            align-items:center;/*Nothing happens until you add height(vh)*/
+            height:50vh;/*centered on the Y-axis(up and down)"vertical" */
+            /* align-items:flex-start */
+            /* align-items:flex-end */
+            /* align-items:stretch; */
+            align-items:center;
+            /* flex-direction:column; */
+            /* justify-content: flex-start; */
+            /* justify-content:flex-end; */
+            justify-content:center;
+            /* justify-content:space-around; */
+            /* justify-content:space-between; */
+            /*"IMPORTANT" IF FLEX-DIRECTION:COLUMN IS ON THEN
+            JUSTIFY-CONTENT IS GOING TO BE (VERTICAL) AND NOT "HORIZONTAL".*/
+            /* justify-content: center; */
         }
 
         .item{
             background:#f4f4f4;/* color of background*/
             border:#ccc solid 2px;/*border color*/
             margin:10px;/*Spacings outside the border(in between)*/
+            padding:10px;/*Spacing inside the boxes*/
             text-align:center;/*centers the text inside the boxes*/
             border-radius:10px;/*curved corner edges on the border*/
             /* width:200px;Sets how big you want them */
             /*flex-shrink:0;/*none of them will shrink if i put it on the parent*/
             /*flex-grow:1;/*I put this oif i want to grow all of them*/
-            flex:1;/*flex-1 is the general term for using all 3 flex properties
+            /*flex:1;/*flex-1 is the general term for using all 3 flex properties
             including grow,shrink,and basis(it can take in 3 values of numbers
             */
-            flex:1;
+            /* flex:1; */
+        }
+
+        .item-1{
+            align-self:flex-start; /*item-1 box movement*/
         }
 
     </style>
